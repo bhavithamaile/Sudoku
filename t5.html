@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table #t01 tr:nth-child(even){
+background-color:grey;}
+table #t01 tr:nth-child(odd){
+background-color:white;}
+table #t01 th{background-color:black;
+color:white;}
+
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 50px;
+    cursor: pointer;
+}
+
+table{border-collapse;font-family:calibri,sans-serif;}
+colgroup,tbody{border:solid medium;}
+td { border: solid thin; height:1.4em; width: 1.4em; text-align: center; padding: 1; }
+</style>
+
+</head>
+
+<body background ="DOKU.jpg">
+<center>
+
+<button class="button" onclick="startCount()">Start count!</button>
+<input type="text" id="txt">
+<button class="button" onclick="stopCount()">Stop count!</button>
+
+<script>
+var c = 0;
+var t;
+var timer_is_on = 0;
+
+function timedCount() {
+    document.getElementById("txt").value = c;
+    c = c + 1;
+    t = setTimeout(function(){ timedCount() }, 1000);
+}
+
+function startCount() {
+    if (!timer_is_on) {
+        timer_is_on = 1;
+        timedCount();
+    }
+}
+
+function stopCount() {
+    clearTimeout(t);
+    timer_is_on = 0;
+}
+</script>
+</center>
+<center>
+
+
+<table style="width:10%">
+<table width="400" cellpadding="4" cellspacing="10" style="border:#000000 5px solid">
+<colgroup><col><col><col>
+<colgroup><col><col><col>
+<colgroup><col><col><col>
+<tbody>
+  <tr>
+    <td > <input type="text" style="width:30px;"/><br> </td>
+    <td> <input type="text" style="width:30px;"/><br></td>
+      <td> <input type="text"style="width:30px;"/><br></td>
+     <td>2 </td>
+     <td> <input type="text"style="width:30px;"/><br></td>
+     <td> <input type="text" style="width:30px;"/><br></td>
+     <td> <input type="text"style="width:30px;"/><br> </td>
+     <td>6 </td>
+     <td>3 </td>
+  </tr>
+  <tr>
+    <td> 3</td>
+    <td> <input type="text"style="width:30px;"/><br></td>
+    <td> <input type="text"style="width:30px;"/><br> </td>
+    <td> <input type="text" style="width:30px;"/><br></td>
+    <td> <input type="text"style="width:30px;"/><br></td>
+     <td>5 </td>
+    <td>4</td>
+    <td> <input type="text"style="width:30px;"/><br> </td>
+    <td>1 </td>
+  </tr>
+  <tr>
+    <td> <input type="text"style="width:30px;"/><br> </td>
+    <td> <input type="text"style="width:30px;"/><br> </td>
+    <td>1 </td>
+    <td> <input type="text" style="width:30px;"/><br></td>
+    <td> <input type="text"style="width:30px;"/><br></td>
+    <td>3</td>
+    <td> 9</td>
+   <td> 8</td>
+   <td> <input type="text"style="width:30px;"/><br> </td>    
+  </tr>
+<tbody>
+  <tr>
+   <td> <input type="text"style="width:30px;"/><br> </td>
+    <td> <input type="text" style="width:30px;"/><br></td>
+    
+     <td> <input type="text"style="width:30px;"/><br></td>
+     <td> <input type="text" style="width:30px;"/><br></td>
+    <td> <input type="text" style="width:30px;"/><br></td>
+     <td> <input type="text"style="width:30px;"/><br></td>
+     <td> <input type="text" style="width:30px;"/><br></td>
+    <td> 9</td>
+<td> <input type="text"style="width:30px;"/><br> </td>
+  </tr>
+  <tr>
+<td> <input type="text"style="width:30px;"/><br> </td>
+    <td> <input type="text"style="width:30px;"/><br></td>
+    <td> <input type="text" style="width:30px;"/><br></td>
+    <td>5</td>
+    <td> 3</td>
+<td>8 </td>
+    <td> <input type="text"style="width:30px;"/><br></td>
+     <td> <input type="text" style="width:30px;"/><br></td>
+    
+    <td> <input type="text"style="width:30px;"/><br></td>
+     
+  </tr>
+  <tr>
+   <td> <input type="text"style="width:30px;"/><br> </td>
+    <td>3</td>
+    <td> <input type="text"style="width:30px;"/><br></td> 
+    <td> <input type="text" style="width:30px;"/><br></td>
+   <td> <input type="text" style="width:30px;"/><br></td>
+<td> <input type="text"style="width:30px;"/><br> </td>
+     <td> <input type="text" style="width:30px;"/><br></td>
+    
+     <td> <input type="text" style="width:30px;"/><br></td>   
+<td> <input type="text"style="width:30px;"/><br> </td>
+  </tr>
+<tbody>
+<tr>
+    <td> <input type="text"style="width:30px;"/><br> </td>
+<td>2</td>
+    <td>6 </td>
+     <td> 3</td>
+     
+    <td> <input type="text"style="width:30px;"/><br></td>
+     <td> <input type="text"style="width:30px;"/><br></td>
+     <td> 5</td>
+      <td> <input type="text" style="width:30px;"/><br></td>
+<td> <input type="text"style="width:30px;"/><br> </td>
+  </tr>
+  <tr>
+    
+    <td>5</td>
+    <td> <input type="text"style="width:30px;"/><br></td>
+    <td> 3</td>
+    <td> 7</td>
+<td> <input type="text"style="width:30px;"/><br> </td>     
+<td> <input type="text"style="width:30px;"/><br></td>
+    <td> <input type="text" style="width:30px;"/><br></td>
+    <td> <input type="text"style="width:30px;"/><br></td>
+     <td>8 </td>
+  </tr>
+  <tr>
+    
+    <td>4</td>
+    <td>7</td>  
+<td> <input type="text"style="width:30px;"/><br> </td>
+<td> <input type="text"style="width:30px;"/><br> </td>
+<td> <input type="text"style="width:30px;"/><br> </td>
+    <td> 1</td>
+    <td> <input type="text"style="width:30px;"/><br> </td>
+     <td> <input type="text"style="width:30px;"/><br></td>
+     <td> <input type="text"style="width:30px;"/><br></td>  
+  </tr>
+</table>
+<a href="button.html"<button class="button">BACK</button></a>
+</center>
+<center>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('MyApp', [])
+        app.controller('MyController', function ($scope) {
+            //This will hide the DIV by default.
+            $scope.IsHidden = true;
+            $scope.ShowHide = function () {
+                //If DIV is hidden it will be visible and vice versa.
+                $scope.IsHidden = $scope.IsHidden ? false : true;
+            }
+        });
+    </script>
+    <div ng-app="MyApp" ng-controller="MyController">
+        <input type="button" value="show/hide solution" ng-click="ShowHide()" />
+        <br />
+        <br />
+        <div ng-hide = "IsHidden">
+<style>
+table{border-collapse;font-family:calibri,sans-serif;}
+colgroup,tbody{border:solid medium;}
+td { border: solid thin; height:1.4em; width: 1.4em; text-align: center; padding: 1; }
+</style>
+<table style="width:10%">
+
+<table width="400" cellpadding="4" cellspacing="10" style="border:#000000 5px solid">
+<colgroup><col><col><col>
+<colgroup><col><col><col>
+<colgroup><col><col><col>
+<tbody>
+<tr>
+    <td> 8</td>
+    <td> 5</td>
+     <td> 4</td>
+     <td> 2</td>
+    <td> 1</td>
+     <td> 9</td>
+     <td>7</td>
+    <td> 6</td>
+     <td> 3</td>
+  </tr>
+  <tr>
+    <td>3 </td>
+    <td>9 </td>
+    <td> 7 </td>
+    <td> 8</td>
+    <td> 6</td>
+     <td> 5</td>
+     <td> 4</td>
+    <td> 2</td>
+     <td>1 </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>6  </td>
+    <td> 1</td>
+    <td> 4</td>
+    <td> 7</td>
+     <td>3</td>
+     <td> 9</td>
+    <td> 8</td>
+     <td>5 </td>    
+  </tr>
+<tbody>
+<tr>
+    <td> 7</td>
+    <td>8 </td>
+     <td> 5</td>
+     <td>1 </td>
+    <td> 2</td>
+     <td> 6</td>
+     <td> 3</td>
+    <td>9</td>
+     <td> 4</td>
+  </tr>
+  <tr>
+    <td>6 </td>
+    <td>4</td>
+    <td> 9</td>
+    <td> 5</td>
+    <td> 3</td>
+     <td> 8</td>
+     <td> 1</td>
+    <td> 7</td>
+     <td> 2</td>
+  </tr>
+  <tr>
+    <td>1 </td>
+    <td> 3</td>
+    <td> 2</td> 
+    <td> 9</td>
+    <td> 4</td>
+     <td> 7</td>
+     <td> 8</td>
+    <td>5 </td>
+     <td> 6</td>   
+  </tr>
+<tbody>
+<tr>
+    <td>9 </td>
+    <td>2 </td>
+     <td> 6</td>
+     <td>3 </td>
+    <td> 8</td>
+     <td> 4</td>
+     <td> 5</td>
+    <td> 1</td>
+     <td> 7</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>1 </td>
+    <td> 3</td>
+    <td>7 </td>
+    <td> 9</td>
+     <td> 2</td>
+    <td> 6</td>
+    <td> 4</td>
+     <td> 8</td>
+  </tr>
+  <tr>
+    <td>4 </td>
+    <td> 7</td>
+    <td> 8</td>  
+    <td> 6</td>
+    <td>5</td>
+     <td> 1</td>
+     <td> 2</td>
+    <td> 3</td>
+     <td> 9</td>  
+  </tr>
+</center>
+
+</div>
+</body>
+</html>

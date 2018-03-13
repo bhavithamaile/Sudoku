@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Sudoku Rules>
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 60px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+<body background="bg2.jpg">
+<center>
+<h2>
+A standard Sudoku puzzle consists of a grid of 9 blocks. Each block contains 9 boxes arranged in 3 rows and 3 columns.
+Consider this example of a Sudoku puzzle:</h2>
+<h1>example</h1>
+<img src="example.jpg" style="width:400px;height:400px;">
+
+<h1> Basic Rules of Sudoku:</h1><br>
+
+<h2>· There is only one valid solution to each Sudoku puzzle. The only way the puzzle can be considered solved correctly is when all 81 boxes contain numbers and the other Sudoku rules have been followed.
+
+· When you start a game of Sudoku, some blocks will be pre-filled for you. You cannot change these numbers in the course of the game.<br>
+
+·Each column must contain all of the numbers 1 through 9 and no two numbers in the same column of a Sudoku puzzle can be the same.<br>
+
+· Each row must contain all of the numbers 1 through 9 and no two numbers in the same row of a Sudoku puzzle can be the same.<br>
+
+· Each block must contain all of the numbers 1 through 9 and no two numbers in the same block of a Sudoku puzzle can be the same.<br></h2>
+
+<img src="exampsol.jpg" style="width:400px;height:400px;">
+
+
+<h2> Sudoku Solution When the rules are applied, the solved Sudoku puzzle appears as shown:
+Sudoku solution</h2>
+<a href="sudoku.html"><button class="button" style="vertical-align:middle"><span>Home </span></button></a>
+</center>
+</body>
+</html>
